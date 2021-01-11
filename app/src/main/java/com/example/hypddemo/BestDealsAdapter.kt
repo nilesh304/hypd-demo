@@ -12,6 +12,8 @@ class BestDealsAdapter(val deals : List<BestDeal>) : RecyclerView.Adapter<BestDe
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BestDealViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val view = inflater.inflate(R.layout.item_deals ,parent , false)
+//        val view = inflater.inflate(R.layout.item_deals_v2 ,parent , false)
+
         return BestDealViewHolder(view)
 
 
@@ -20,6 +22,7 @@ class BestDealsAdapter(val deals : List<BestDeal>) : RecyclerView.Adapter<BestDe
 
     override fun onBindViewHolder(holder: BestDealViewHolder, position: Int) {
         holder.image.setBackgroundResource(deals[position].image)
+//        holder.title.text = deals[position].title
 
     }
 
@@ -32,5 +35,6 @@ class BestDealsAdapter(val deals : List<BestDeal>) : RecyclerView.Adapter<BestDe
 class BestDealViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
     var image = itemView.findViewById<ImageView>(R.id.deal_IV)
+//    var title = itemView.findViewById<TextView>(R.id.dealsTitleV2)
 
 }

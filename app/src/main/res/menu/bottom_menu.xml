@@ -12,4 +12,12 @@
         android:id="@+id/settings"
         android:title="Settings"
         android:icon="@drawable/settings_foreground"/>
+    <item
+        android:id="@+id/album1"
+        android:title="Album"
+        android:icon="@drawable/album_foreground"/>
+    <item
+        android:id="@+id/display1"
+        android:title="Display"
+        android:icon="@drawable/display_foreground"/>
 </menu>

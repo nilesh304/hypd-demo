@@ -39,17 +39,26 @@ class BestDealsFragment : Fragment() {
         myView= inflater.inflate(R.layout.fragment_best_deals, container, false)
         viewPager2 = myView.findViewById(R.id.dealVP)
 
-        val images = mutableListOf<BestDeal>()
+        val deal_list = mutableListOf<BestDeal>()
 
-        images.add(BestDeal(R.drawable.a))
-        images.add(BestDeal(R.drawable.b))
-        images.add(BestDeal(R.drawable.c))
-        images.add(BestDeal(R.drawable.d))
-        images.add(BestDeal(R.drawable.e))
+        deal_list.add(BestDeal(R.drawable.a))
+        deal_list.add(BestDeal(R.drawable.b))
+        deal_list.add(BestDeal(R.drawable.c))
+        deal_list.add(BestDeal(R.drawable.d))
+        deal_list.add(BestDeal(R.drawable.e))
+//
+//        deal_list.add(BestDeal("BestDeals-1"))
+//        deal_list.add(BestDeal("BestDeals-2"))
+//        deal_list.add(BestDeal("BestDeals-3"))
+//        deal_list.add(BestDeal("BestDeals-4"))
+//        deal_list.add(BestDeal("BestDeals-5"))
+//        deal_list.add(BestDeal("BestDeals-6"))
+//        deal_list.add(BestDeal("BestDeals-7"))
+//        deal_list.add(BestDeal("BestDeals-8"))
 
 
 
-        viewPager2.adapter = BestDealsAdapter(images)
+        viewPager2.adapter = BestDealsAdapter(deal_list)
 
         viewPager2.clipToPadding = false
         viewPager2.clipChildren = false

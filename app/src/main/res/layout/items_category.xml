@@ -2,12 +2,12 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="125dp"
+    android:layout_width="100dp"
     android:layout_height="100dp"
     android:orientation="vertical"
-    app:cardCornerRadius="11dp"
     android:layout_margin="11dp"
-    app:cardBackgroundColor="#D3D3D3"
+    android:outlineAmbientShadowColor="@color/white"
+    android:outlineSpotShadowColor="@color/white"
     >
 
 
@@ -17,22 +17,38 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <TextView
-            android:id="@+id/categoryTitle"
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:textColor="@color/white"
-            android:text="Title" />
+            android:layout_height="match_parent"
+            app:cardCornerRadius="22dp"
+            app:cardBackgroundColor="#D3D3D3"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/categoryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Title" />
+        </androidx.cardview.widget.CardView>
+
+<!--        <TextView-->
+<!--            android:id="@+id/categoryTitle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:text="Title" />-->
 
         <TextView
             android:id="@+id/categoryDesc"
-            android:layout_width="match_parent"
-            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:textColor="@color/white"
             android:text="Desc" />
     </LinearLayout>
 

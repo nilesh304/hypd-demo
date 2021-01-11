@@ -41,6 +41,8 @@ class CategoryFragment : Fragment() {
         categories.add(Category("Item5" , "Title5"))
         categories.add(Category("Item6" , "Title6"))
 
+
+
         val rv = v.findViewById<RecyclerView>(R.id.categoryRV)
         val lm = LinearLayoutManager(this.context , LinearLayoutManager.HORIZONTAL ,false)
 

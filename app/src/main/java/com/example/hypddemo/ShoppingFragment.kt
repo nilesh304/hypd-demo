@@ -19,6 +19,15 @@ class ShoppingFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        val fm = childFragmentManager
+        fm.beginTransaction().apply {
+            replace(R.id.frame1 , CategoryFragment())
+            replace(R.id.frame2 , BestDealsFragment())
+            replace(R.id.frame3 , TrendingFragment())
+            replace(R.id.frame4 , CategoryFragment())
+            commit()
+        }
         return inflater.inflate(R.layout.shopping_fragment, container, false)
     }
 
