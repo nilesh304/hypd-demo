@@ -12,12 +12,9 @@ class CategoryAdapter(val categories : List<Category>) : RecyclerView.Adapter<Ca
         val view = inflater.inflate(R.layout.items_category ,parent , false)
         return CategoryViewHolder(view)
 
-
-
     }
 
     override fun onBindViewHolder(holder: CategoryViewHolder, position: Int) {
-        holder.categoryTitle.text = categories[position].title
         holder.categoryDesc.text = categories[position].description
 
     }
@@ -30,7 +27,6 @@ class CategoryAdapter(val categories : List<Category>) : RecyclerView.Adapter<Ca
 
 class CategoryViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
-    var categoryTitle = itemView.findViewById<TextView>(R.id.categoryTitle)
     var categoryDesc = itemView.findViewById<TextView>(R.id.categoryDesc)
 
 }

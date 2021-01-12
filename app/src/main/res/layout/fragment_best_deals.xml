@@ -9,21 +9,16 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/dvi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="6dp"
-            >
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Best Deals"
+            android:textColor="@color/black" />
 
-            <TextView
-                android:id="@+id/dvi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="BestDeals" />
-
-        </LinearLayout>
 
         <androidx.viewpager2.widget.ViewPager2
             android:layout_width="match_parent"

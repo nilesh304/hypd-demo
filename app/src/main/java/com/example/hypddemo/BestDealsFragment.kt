@@ -41,11 +41,11 @@ class BestDealsFragment : Fragment() {
 
         val deal_list = mutableListOf<BestDeal>()
 
-        deal_list.add(BestDeal(R.drawable.a))
-        deal_list.add(BestDeal(R.drawable.b))
-        deal_list.add(BestDeal(R.drawable.c))
-        deal_list.add(BestDeal(R.drawable.d))
-        deal_list.add(BestDeal(R.drawable.e))
+        deal_list.add(BestDeal(R.drawable.mic))
+        deal_list.add(BestDeal(R.drawable.moon))
+        deal_list.add(BestDeal(R.drawable.leaf))
+        deal_list.add(BestDeal(R.drawable.shoes))
+        deal_list.add(BestDeal(R.drawable.camera))
 //
 //        deal_list.add(BestDeal("BestDeals-1"))
 //        deal_list.add(BestDeal("BestDeals-2"))
@@ -71,6 +71,7 @@ class BestDealsFragment : Fragment() {
         compositePageTransformer.addTransformer{page , position ->
             val r = 1- kotlin.math.abs(position)
             page.scaleY = 0.85f + r*0.25f
+            page.scaleX = 0.85f + r*0.25f
         }
         viewPager2.setPageTransformer(compositePageTransformer)
 

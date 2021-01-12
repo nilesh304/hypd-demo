@@ -21,12 +21,14 @@
 
         <ImageView
             android:id="@+id/trendsIv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingEnd="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="7dp"
             android:layout_gravity="end"
-            app:srcCompat="@android:drawable/ic_menu_myplaces" />
+            android:background="@drawable/background_rectangular_like"
+            android:layout_margin="10dp"
+            app:tint="@color/black"
+            android:src="@drawable/ic_outline_favorite_border_24" />
 
 
         <TextView
