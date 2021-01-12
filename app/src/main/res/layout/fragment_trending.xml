@@ -22,6 +22,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans_bold"
                 android:text="What's Trending" />
 
         </LinearLayout>
